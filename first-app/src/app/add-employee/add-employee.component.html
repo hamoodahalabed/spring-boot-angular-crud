@@ -1,0 +1,43 @@
+<div class="container">
+  <h2>Insert Employee Data</h2>
+  <br />
+  <form (ngSubmit)="AddEmployee()">
+    <div class="form-group">
+      <input
+        [(ngModel)]="newEmployee.name"
+        class="form-control"
+        name="name"
+        placeholder="John Doe"
+      />
+    </div>
+    <br />
+    <div class="form-group">
+      <input
+        [(ngModel)]="newEmployee.designation"
+        name="designation"
+        class="form-control"
+        placeholder="Software Developer"
+      />
+    </div>
+    <br />
+    <div class="form-group">
+      <input
+        [(ngModel)]="newEmployee.email"
+        name="email"
+        class="form-control"
+        placeholder="example@gmail.com"
+      />
+    </div>
+    <br />
+    <div class="form-group">
+      <input
+        [(ngModel)]="newEmployee.phone"
+        name="phone"
+        class="form-control"
+        placeholder="+962123456789"
+      />
+    </div>
+    <br /><br />
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>
+</div>

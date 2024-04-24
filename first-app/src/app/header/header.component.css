@@ -1,0 +1,6 @@
+.header {
+  margin-bottom: 50px;
+}
+.nav-link.active {
+  background: darkgray;
+}

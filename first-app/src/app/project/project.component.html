@@ -1,0 +1,33 @@
+<div class="container">
+  <h3>Projects List</h3>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Budget</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let project of projects">
+        <td>{{ project.projectId }}</td>
+        <td>{{ project.projectName }}</td>
+        <td>{{ project.budget | currency }}</td>
+        <td>{{ project.status }}</td>
+
+        <td>
+          <div class="container">
+            <button
+              class="btn btn-danger"
+              (click)="deleteProject(project.projectId)"
+            >
+              Delete
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

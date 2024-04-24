@@ -1,0 +1,48 @@
+<div class="container">
+  <h3>Employee List</h3>
+
+  <br />
+
+  <h3><a class="btn btn-primary" routerLink="addEmployee">Add employee</a></h3>
+  <br /><br />
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.name | uppercase }}</td>
+        <td>{{ employee.designation }}</td>
+        <td>{{ employee.email }}</td>
+        <td>{{ employee.phone }}</td>
+
+        <td>
+          <div class="container">
+            <a
+              mat-button
+              routerLink="/employees/{{ employee.id }}/edit"
+              class="btn btn-primary"
+            >
+              &nbsp; Edit <span class="material-icons"> edit </span></a
+            >
+            <button
+              mat-button
+              class="btn btn-danger"
+              (click)="deleteEmployee(employee.id, 'Undo')"
+            >
+              &nbsp; Delete <span class="material-icons"> delete </span>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

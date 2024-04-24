@@ -1,0 +1,48 @@
+<div class="container">
+  <mat-spinner></mat-spinner>
+  <br /><br /><br />
+  <mat-horizontal-stepper [linear]="isLinear">
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Personal Information</ng-template>
+        <mat-form-field>
+          <input
+            matInput
+            formControlName="firstName"
+            placeholder="First Name"
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput formControlName="lastName" placeholder="Last Name" />
+        </mat-form-field>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Contact Information</ng-template>
+        <mat-form-field>
+          <input matInput formControlName="email" placeholder="Email Address" />
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput formControlName="phone" placeholder="Phone Number" />
+        </mat-form-field>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="thirdFormGroup">
+      <form [formGroup]="thirdFormGroup">
+        <ng-template matStepLabel>Address Information</ng-template>
+        <mat-form-field>
+          <input matInput formControlName="address" placeholder="Address" />
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput formControlName="city" placeholder="City" />
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput formControlName="country" placeholder="Country" />
+        </mat-form-field>
+      </form>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>
+<br /><br />
+<br /><br />
