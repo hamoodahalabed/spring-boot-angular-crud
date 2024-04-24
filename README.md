@@ -23,7 +23,7 @@ This repository contains a CRUD (Create, Read, Update, Delete with undo option) 
 - Create new [entity] records
 - Read existing [entity] records
 - Update [entity] records
-- Delete [entity] records
+- Delete [entity] records (with abilty to undo)
 
 ## Getting Started
 
