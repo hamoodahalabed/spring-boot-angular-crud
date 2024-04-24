@@ -1,6 +1,6 @@
 # Spring Boot Angular CRUD Application
 
-This repository contains a CRUD (Create, Read, Update, Delete) application built using Spring Boot for the backend and Angular for the frontend. The application allows users to perform CRUD operations on [employees, departments, projects].
+This repository contains a CRUD (Create, Read, Update, Delete with undo option) application built using Spring Boot for the backend and Angular for the frontend. The application allows users to perform CRUD operations on [employees, departments, projects].
 
 ## Technologies Used
 
