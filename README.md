@@ -37,7 +37,7 @@ To run this application locally, follow these steps:
 6. Run `ng serve` to start the Angular development server for the frontend.
 7. Open your browser and navigate to `http://localhost:4200/` to view the application.
 8. change the spring application.properties to match your database configuration and then insert what ever data you want to the table 
-   (there is no realtion between table for simplisty).
+   (there is no realtion between table for simplicity).
 
 
 ## Folder Structure
